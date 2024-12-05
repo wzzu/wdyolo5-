@@ -2,13 +2,19 @@
 
 #### 一、详细训练步骤
 
-##### 1、yolov5模型下载并解压：
+##### 1、下载Anaconda，配置并启动YOLO5环境
+
+下载地址：https://anaconda.cloud/
+
+打开命令行配置文件，具体教程地址：https://b23.tv/GRZfe4s
+
+##### 2、yolov5模型下载并解压：
 
 下载地址：https://github.com/ultralytics/yolov5
 
 解压：<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/zip.png" style="zoom: 67%;" />
 
-##### 2、数据准备
+##### 3、数据准备
 
 （1）在yolov5/data文件下创建如下文件目录
 
@@ -116,7 +122,7 @@ for image_set in sets:
 
 
 
-##### 3、修改配置文件
+##### 4、修改配置文件
 
 （1）修改coco.yaml文件
 
@@ -136,7 +142,7 @@ models下有四个模型，smlx需要训练的时间依次增加，按照需求�
 
 <img src="https://github.com/Dot-Moker/Yolov5-/blob/master/model.png" style="zoom:67%;" />
 
-##### 4、修改train.py并开始训练
+##### 5、修改train.py并开始训练
 
 weights，yaml，data按照自己文件的路径修改， epochs迭代次数自己决定，这里仅用9次进行测训练。batch-size过高可能会影响电脑运行速度，根据自己电脑硬件条件决定增加还是减少修改完成，运行开始训练。
 
@@ -156,17 +162,7 @@ weights，yaml，data按照自己文件的路径修改， epochs迭代次数自�
 
 <img src="https://github.com/Dot-Moker/Yolov5-/blob/master/result.png" alt="result" style="zoom:67%;" />
 
-#### 二、训练结果
-
-##### 1、相关训练文件
-
-<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/result_img.png" style="zoom:67%;" />
-
-##### 2、模型文件
-
-<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/result_model.png" alt="result_model" style="zoom:67%;" />
-
-#### 三、遇到的问题
+#### 二、遇到的问题
 
 ##### 1、内存爆炸
 
